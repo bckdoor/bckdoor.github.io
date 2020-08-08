@@ -1,0 +1,920 @@
+/*====================================================================================================================================
+
+                                    project : Portfolio - Sahil Sadhwani
+
+                                        DEFAULT VALUES USED
+
+                                font used : Roboto Condensed
+
+                                #232323; (buttons, Icons , Links, Lines and backgrounds) 
+                                #333 (Headings) 
+                                #484848 (Paragraphs)
+                                #666, #ccc (Miscellaneous colors used)
+                                
+====================================================================================================================================*/
+
+/*==================================================================================================================================                                 GENERAL SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+html{
+/*    overflow: hidden;*/
+    height: 100%;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "Roboto Condensed", sans-serif;
+/*    overflow: auto;*/
+    overflow-x: hidden;
+}
+
+.bottom-margin{
+    margin-bottom: 30px;
+}
+
+section{
+/*
+    width: 100%;
+    height: 100%;
+*/
+    overflow: hidden;
+    background: #fff;
+}
+/*===================================================================================================================================                                    FONT COLOR SETTINGS                                                                               
+===================================================================================================================================*/
+.text-heading{
+    color: #333;
+    text-transform: uppercase;
+}
+.text-content{
+    color: #64707B;
+}
+
+.text-heading-white{
+    color: #fff;
+}
+
+/*----------------------------------------
+Pre Loader
+----------------------------------------*/
+.loader-con {
+/*    position: absolute;*/
+	position: fixed;
+	top: 0;
+    right:0;
+    bottom:0;
+	left: 0;
+    margin: auto;
+	width: 100%;
+	height: 100%;
+	background-color: #fafafa;
+	z-index: 9999;
+}
+.loader-con .spinner {
+  width: 50px;
+  height: 50px;
+}
+.double-bounce1, .double-bounce2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	opacity: 0.6;
+	top: 0;
+    right:0;
+    bottom:0;
+	left: 0;
+    margin: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	-moz-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	-moz-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------
+keyframes animation
+----------------------------------------*/
+
+/* PreLoader Animations*/
+@-webkit-keyframes sk-bounce {
+  0%, 100% { 
+    -webkit-transform: scale(0.0); 
+            transform: scale(0.0);
+  } 50% { 
+    -webkit-transform: scale(1.0); 
+            transform: scale(1.0);
+  }
+}
+@-moz-keyframes sk-bounce {
+  0%, 100% { 
+    -moz-transform: scale(0.0); 
+         transform: scale(0.0);
+  } 50% { 
+    -moz-transform: scale(1.0); 
+         transform: scale(1.0);
+  }
+}
+@keyframes sk-bounce {
+  0%, 100% { 
+    -webkit-transform: scale(0.0); 
+       -moz-transform: scale(0.0); 
+            transform: scale(0.0);
+  } 50% { 
+    -webkit-transform: scale(1.0); 
+       -moz-transform: scale(1.0); 
+            transform: scale(1.0);
+  }
+}
+
+/*===================================================================================================================================                                    PARALLAC IMAGE                                                                                 
+===================================================================================================================================*/
+
+.bg-parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/*===================================================================================================================================                                    GENERAL BUTTON CSS                                                                                 
+===================================================================================================================================*/
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-white{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus{
+    background: #fff;
+    color: #41464B;
+}
+
+
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+
+/*===================================================================================================================================                                    CONTENT BOX CSS                                                                              
+===================================================================================================================================*/
+.content-box{
+    padding: 60px 0;
+}
+.content-title .text-heading{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto 30px;
+}
+
+
+
+
+
+
+/*==================================================================================================================================                              NAVIGATION SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+
+.navbar-nav>li.active>a:hover,
+.navbar-nav>li.active>a:focus
+{
+    color: #ddd;
+    background: none !important;
+}
+
+.hover:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;    
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.hover:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/*
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+*/
+
+
+
+/*===================================================================================================================================                                    HOME SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+.home-section{
+    height: 100%;
+}
+
+.home-cover{
+/*    background-image: url('../img/bg-home.jpg');*/
+/*    background: #484848;*/
+    height: 100%;   
+}
+
+.home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+/*    text-align: center;*/
+}
+
+.home-section .text-heading{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.home-btn img{
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: solid 3px #dfdfdf;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.52);
+    vertical-align: middle;
+    display: block;
+}
+
+.typer-parent{
+    font-size: 26px;
+    color: #bfbfbf;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.typer{
+    font-size: 26px;
+    color: #bfbfbf; 
+    font-weight: 500;
+}
+
+/*//here*/
+.home-bg-video{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+video{
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+
+#home-overlay{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
+}
+
+
+
+
+
+.btn-cv{
+    margin-top:22px;
+    font-size: 30px;
+    color: #fff;
+/*    background: :#fff;*/
+    padding: 12px;
+    border-color: #fff;
+    
+}
+
+.btn-cv:hover{
+    background: #fff;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+
+
+
+/*===================================================================================================================================                                    ABOUT SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+
+/*----------------------------------------
+About
+----------------------------------------*/
+.about-content{
+/*
+    border: solid 2px #eee;
+    padding: 5px;
+*/
+}
+
+.skills-section{
+/*
+    border: solid 2px #eee;
+    padding: 5px;
+*/
+}
+
+.about-content h2 {
+	margin-bottom: 30px;
+	text-transform: capitalize;
+    font-size: 32px;
+}
+.about-content p {
+margin-bottom: 16px;
+    font-size: 22px;
+    color: #666;
+}
+
+.about-content ul li {
+	margin-top: 8px;
+	font-size: 18px;
+	color: #666;
+}
+.about-content ul li span {
+	font-weight: 700;
+	color: #232323;
+}
+.about-content ul li span i {
+	margin-right: 4px;
+}
+.social-list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.social-list li {
+	display: inline-block;
+	margin: 4px;
+}
+.social-list li a {
+/*	display: inline-block;*/
+    padding: 5px;
+	font-size: 16px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 36px;
+	color: #232323;
+	border: 1px solid #888;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.social-list li:hover a {
+	color: #fafafa;
+	background-color: #232323;
+	border-color: transparent;
+}
+
+.skills-section {
+/*	padding: 20px 0;*/
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.progress-bar-linear {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.progress-bar-text {
+    display: inline-block;
+/*    margin-left: 8px;*/
+    margin-bottom: 6px;
+/*    font-size: 13px;*/
+/*    font-weight: 700;*/
+    
+    font-size: 22px;
+    color: #666;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+.progress-cont {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+.progress-bar-linear .progress-bar-skills {
+    position: relative;
+    width: 100%;
+    background-color: #dfdfdf;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.progress-bar-skills .progress-bar-line {
+    position: relative;
+    width: 5%;
+    height: 6px;
+    background-color: #4f4f4f;
+    -webkit-transition: all 1.6s ease-out;
+    -o-transition: all 1.6s ease-out;
+    -moz-transition: all 1.6s ease-out;
+    transition: all 1.6s ease-out;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+
+
+
+/*===================================================================================================================================                                    EDUCATION SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+.education-section{
+    background: #eee;
+}
+
+
+.education-wrapper{ position: relative;padding-top:20px; }
+
+.education-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
+	width: 2px; background: #ccc; }
+
+.education-wrapper .education{ position: relative;  margin-bottom: 70px;}
+
+.education-wrapper .education:after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px; 
+	height: 16px; border-radius: 10px; z-index: 1;
+	box-shadow: 0 0 0 8px #888; background: #666; }
+	
+	
+
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+
+	
+
+
+	
+	/* ---------------------------------
+	7. EDUCATION SECTION
+	--------------------------------- */
+	
+	.education-wrapper:after,
+	.education-wrapper .education:after{ display: none}
+}
+
+
+
+
+
+
+
+
+/*===================================================================================================================================                                    SKILL SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+
+
+
+
+
+/*===================================================================================================================================                                    PROJECT SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+
+
+
+
+.project-section{
+    background: #eee;
+}
+
+/* Projects Area css
+============================================================================================ */
+.projects_fillter {
+  background: #888; }
+
+  .projects_fillter .filter {
+      font-weight: 500;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 13px 0; }
+
+    @media (max-width: 575px) {
+      .projects_fillter .filter {
+        padding: 13px; } }
+
+    .projects_fillter .filter:after {
+      position: absolute;
+      left: 2%;
+      bottom: -10px;
+      height: 100%;
+      width: 96%;
+      content: "";
+      background: #ffe6db;
+      z-index: -1; 
+    }
+
+    .projects_fillter .filter li {
+      display: inline-block;
+      margin-right: 25px;
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer; }
+
+      .projects_fillter .filter li:last-child {
+        margin-right: 0px; }
+
+      .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
+        color: #222; }
+
+.projects_inner {
+  margin-bottom: -30px; }
+
+.projects_item {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px; }
+
+  .projects_item:before {
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms ease; }
+
+  .projects_item .projects_text {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+
+    .projects_item .projects_text h4 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 5px;
+      -webkit-transition: all 0.4s ease 0s;
+      -moz-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+      text-transform: uppercase;
+    }
+
+    .projects_item .projects_text p {
+      margin-bottom: 0px;
+      font-size: 15px;
+      color: #fff; }
+
+  .projects_item:hover:before {
+    opacity: 0.4; }
+
+  .projects_item:hover .projects_text {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px; }
+
+/* End Projects Area css
+============================================================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================================================================================================================================                                    CONTACT ME SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+
+.contact-section{
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.contact-item {
+	position: relative;
+}
+.contact-item:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.contact-item .c-icon {
+	position: relative;
+    top: 6px;
+	width: 60px;
+	height: 60px;
+	float: left;
+	background-color: #232323;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.contact-item .c-icon .fa {
+	font-size: 20px;
+	line-height: 58px;
+	color: #fafafa;
+}
+.contact-item .c-text {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 70px;
+}
+.contact-item .c-text h5 {
+	margin: 0;
+	margin-bottom: 2px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.contact-item .c-text h6 {
+	margin: 0;
+	word-break: break-all;
+}
+
+#contact-form {
+	margin-top: 50px;
+}
+.input-field {
+    width: 100%;
+    padding: 8px 16px;
+    color: #232323;
+    border: 1px solid #ddd;
+    outline: none;
+}
+textarea.input-field {
+    height: 190px;
+    resize: none;
+}
+.name-error,
+.email-error,
+.message-error,
+.error {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ff2828;
+}
+.success {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #1e9402;
+}
+#form-message {
+    float: left;
+    width: 100%;
+}
+.submit-btn {
+	display: block;
+	margin: 0 auto;
+	padding: 8px 20px;
+	font-size: 22px;
+/*	font-weight: 700;*/
+/*	border: 2px solid #333;*/
+	outline: none;
+	background-color: #222;
+	color: #fff;
+	cursor: pointer;
+}
+.submit-btn:hover {
+	color: #222;
+	background-color: transparent;
+    border: solid 1px #222;
+}
+
+
+
+
+
+/*===================================================================================================================================                                    FOOTER SECTION CSS                                                                                   
+===================================================================================================================================*/
+
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: #eee;
+}
+.footer-title {
+	display: inline-block;
+	margin-bottom: 6px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+.footer-social {
+    padding: 10px 0;
+}
+.footer-social-list li {
+    display: inline-block;
+}
+.footer-social-list li a {
+    font-size: 20px;
+    color: #434343;
+    margin: 0 9px;
+}
+.footer-social-list li a:hover {
+	color: #111;
+}
+.footer .copy-text {
+    margin: 8px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.scroll-up {
+    position: fixed;
+	font-size: 28px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 38px;
+    color: #fafafa;
+    border: 2px solid #333;
+    background-color: #333;
+    bottom: 25px;
+    right: 30px;
+    opacity: 0;
+    z-index: 60;
+}
+.scroll-up:focus {
+	color: #fff;
+}
+.scroll-up:hover {
+	background-color: transparent;
+	color: #333;
+}
+.show-up-btn {
+	opacity: 1;
+}
+
+
+
+
+
+.btn-black{
+    color: #222;
+    border-color: #222;
+}
+.btn-black:hover,
+.btn-black:focus{
+    background: #222;
+    color: #FFF;
+}
+
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.effect {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/*responsive css*/
+
+/*LARGE DEVICES*/
+@media (min-width: 1200px){
+/*    its alreday fine, if found any bug we would add something here*/
+}
+
+/*MEDIUM DEVICES*/
+@media(min-width: 992px) and (max-width: 1199px){
+    
+}
+
+/*SMALL DEVICES: TABLETS*/
+@media(min-width: 768px) and (max-width: 991px){
+    
+}
+
+
+
+
+
+/*EXTRA SMALL DEVVICES: PHONES*/
+@media(max-width: 767px){
+    .home-cover .home-heading h3{
+        font-size: 34px;
+    }
+    .home-cover .home-heading h4{
+        font-size: 22px;
+    }
+    .btn-cv{
+        font-size: 24px;
+        padding: 8px;
+    }
+}
