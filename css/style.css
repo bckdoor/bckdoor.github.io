@@ -185,8 +185,8 @@ keyframes animation
 
 
 .home-btn img{
-    max-width: 1400px;
-    height: 600px;
+    max-width: 1500px;
+    height: 800px;
     margin: 0 auto;
 /*    border: solid 3px #dfdfdf;*/
 /*    border-radius: 50%;*/
@@ -213,10 +213,9 @@ keyframes animation
   
 }
 .centered-text a{
-    font-size: 18px;
+    font-size: 30px;
     color: #fff;
     text-decoration: none;
-    border: solid 1px #fff;
     padding: 3px;
     padding-left: 15px;
     padding-right: 15px;
@@ -227,7 +226,7 @@ keyframes animation
     color: #fff;
     cursor: pointer;
     background: #222;
-    border: none;
+    border: solid 1px #fff;
 }
 
 
@@ -279,24 +278,6 @@ video{
 
 
 
-
-
-.btn-cv{
-    margin-top:22px;
-    font-size: 30px;
-    color: #fff;
-/*    background: :#fff;*/
-    padding: 12px;
-    border-color: #fff;
-    
-}
-
-.btn-cv:hover{
-    background: #C45911;
-    color: #fff;
-    background-color: #C45911;
-    border-color: #C45911;
-}
 
 
 
@@ -402,9 +383,9 @@ textarea.input-field {
 	cursor: pointer;
 }
 .submit-btn:hover {
-	color: #fff;
-	background-color: #C45911;
-    border: solid 1px #C45911;
+	color: #222;
+	background-color: #fff;
+    border: solid 1px #fff;
 }
 
 
