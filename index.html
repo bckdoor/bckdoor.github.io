@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="vendors/fontawesome-free-5.13.0-web/css/all.min.css">
    
     <!--fonts used-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"> 
-
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+<link rel="stylesheet" href="font/bank-gothic-light-bt.ttf">
     <!--core plugins-->
     <!--bootstrap-->
    
@@ -110,8 +110,9 @@
            
         <div class="home-content-box">
             <div class="home-content-box-inner text-center">
-               <div class="home-btn animated zoomIn">
-                   <img src="img/door%20copy.png" alt="Sahil Sadhwani" class="img-responsive">
+               <div class="home-btn animated zoomIn container-door-image">
+                  <img src="img/door%20copy.png" alt="Sahil Sadhwani" class="img-responsive"> 
+                   <div class="centered-text"><a data-toggle="modal" data-target="#exampleModal">Enter</a></div>
                     </div>
 <!--
                 <div class="home-heading">
@@ -130,6 +131,31 @@
             </div>
         </div><!--home-content-box-->
     </div><!--home-cover-->
+    
+    
+    
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
 </section>
 <!--END OF HOME SECTION-->
 
@@ -137,109 +163,8 @@
   
 
    
-<!--CONTACT ME SECTION-->
-<section id="contact" class="contact-section section">
-   <div class="content-box">
-      <div class="content-title animated fadeInDown wow" data-wow-duration="1s" data-wow-delay=".3s">
-             <h3 class="text-heading">Contact Me</h3>
-                <div class="content-title-underline"></div>
-        </div><!--content title-->
-       <div class="container animated fadeInUp wow">
-                <div class="col-xs-12 col-md-12 col-md-offset-1">
-                    <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="contact-item mb-30">
-                            <div class="c-icon text-center">
-                                <i class="fa fa-phone-alt"></i>
-                            </div>
-                            <div class="c-text">
-                                <h5>PHONE</h5>
-                                <h6>(+91) 83808 06866</h6>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="contact-item mb-30">
-                            <div class="c-icon text-center">
-                                <i class="fa fa-map-marker-alt" style="color:#fff;"></i>
-                            </div>
-                            <div class="c-text">
-                                <h5>LOCATION</h5>
-                                <h6>306, Krishna Avenue, Ulhasnagar, Mumbai - 421003</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="contact-item mb-30">
-                            <div class="c-icon text-center">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="c-text">
-                                <h5>EMAIL</h5>
-                                <h6>sadhwanisahil64@gmail.com</h6>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div><!-- end row -->
- <div class="container animated fadeInUp wow">
-          
-    <div class="col-xs-12 col-md-12 col-md-offset-1">
-                    <form id="contact-form" method="post">
-                    
-                     <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="name" id="name" class="input-field" placeholder="Full Name" required>
-                            <span class="name-error text-center mb-30"></span>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="email" name="email" id="email" class="input-field" placeholder="Email" required="required">
-                            <span class="email-error text-center mb-30"></span>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <textarea name="message" id="message" class="input-field" placeholder="Message" required="required"></textarea>
-                            <span class="message-error text-center mb-30"></span>
-                        </div>
-                        <div id="form-message" class="error mb-30 text-center"></div>
-
-                        
-                         </div>
-                         <div class="row">
-                             <button class="btn effect submit-btn" id="form-send" type="submit">Send Message</button>
-                         </div>
-                         
-                           <div id="msgSubmit" class="h3 text-center animated zoomIn" style="display:none; margin-top: 15px;">
-											<p id="textSuccess" style="color: #232323;">Thankyou for Connecting, I will be contacting you soon.</p>
-										</div>
-                    
-                    <div id="msgFail" class="h3 text-center animated zoomIn" style="display: none; margin-top: 15px;">
-											<p id="textSuccess" style="color: #232323;">Error: Details not sent.</p>
-										</div>
-                    
-                    <div id="incomplete" class="h3 text-center animated zoomIn" style="display: none; margin-top: 15px;">
-											<p id="textSuccess" style="color: #232323;">Please Fill out all the details.</p>
-										</div>    
-                     
-                         
-                    </form>
-            
-            
-            <!-- end row -->
-         <!-- End Container -->
-
-   </div><!--content box-->
-    </div>
-    </div>
-    </section>
-<!--END OF CONTACT ME SECTION-->
-   
-   
-   
  <!-- FOOTER -->
+<!--
 <footer class="footer">
         <div class="container">
             <div class="row">
@@ -255,10 +180,11 @@
 
                 <p class="copy-text">Sahil Sadhwani &copy; 2020. all rights reserved.</p>
             </div>
-            </div> <!-- end row -->
-        </div> <!-- End Container -->
+            </div> 
+        </div> 
         
 </footer>
+-->
 <!-- END FOOTER -->   
    
    
