@@ -90,29 +90,32 @@ $(function(){
 //		console.log(name + email + msg);
         if(name !== "" && email !== ""){
             e.preventDefault();
-            Email.send({
-			    SecureToken : "18fc25c4-9519-4389-a6ee-d67da47d853d",
-    			To : 'bkdr99@gmail.com',
-				From : "bkdr99@gmail.com",
-				Subject : "Enquiry from " + name ,
-				Body : name + "(" + email +")" + " left his contact details on your backdoor website."
-			}).then(
-            message => {
-//                alert(message);
-                
-            if(message == "OK"){
-               
-        $('#exampleModal').modal('hide');
+//            Email.send({
+//			    SecureToken : "18fc25c4-9519-4389-a6ee-d67da47d853d",
+//    			To : 'bkdr99@gmail.com',
+//				From : "bkdr99@gmail.com",
+//				Subject : "Enquiry from " + name ,
+//				Body : name + "(" + email +")" + " left his contact details on your backdoor website."
+//			}).then(
+//            message => {
+////                alert(message);
+//                
+//            if(message == "OK"){
+//               
+//        $('#exampleModal').modal('hide');
+//        $('#exampleModal2').modal('show');
+//    
+//            }else{
+//                $('#exampleModal').modal('hide');
+//                $('#exampleModal3').modal('show');
+//            }
+//            }
+//			
+//				
+//			);
+            
+            $('#exampleModal').modal('hide');
         $('#exampleModal2').modal('show');
-    
-            }else{
-                $('#exampleModal').modal('hide');
-                $('#exampleModal3').modal('show');
-            }
-            }
-			
-				
-			);
             
         }else{
             

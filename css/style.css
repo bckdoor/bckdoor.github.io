@@ -17,12 +17,10 @@
 
 /*==================================================================================================================================                                 GENERAL SECTION CSS                                                                                   
 ===================================================================================================================================*/
-/*
 @font-face {
     font-family: "BankGothic Lt BT";
     src: url('bank-gothic-light-bt.ttf');
 }
-*/
 
 html{
 /*    overflow: hidden;*/
@@ -32,8 +30,8 @@ html,body{
     height: 100%;
 }
 body{
-/*    font-family: "BankGothic Lt BT", serif;*/
-    font-family: "Roboto", sans-serif;
+    font-family: "BankGothic Lt BT", serif;
+/*    font-family: "Roboto", sans-serif;*/
 /*    overflow: auto;*/
     overflow-x: hidden;
 }
@@ -113,7 +111,7 @@ section{
 
 .container-door-image {
   position: relative;
-
+    margin: 0 auto;
 }
 
 .centered-text {
