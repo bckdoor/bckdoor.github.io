@@ -359,7 +359,7 @@ textarea.input-field {
 /*        position: absolute;*/
           top: 68%;
           left: -100%;
-  transform: translate(-100%, -20%);
+  transform: translate(-90%, -20%);
         font-size: 18px;
     }
 }
