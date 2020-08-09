@@ -7,7 +7,7 @@
 
 /*====================================================================================================================================
 
-                                    project : Portfolio - Sahil Sadhwani
+                                    project : Backdoor
 
                                         DEFAULT VALUES USED
 
@@ -22,10 +22,12 @@
 
 /*==================================================================================================================================                                 GENERAL SECTION CSS                                                                                   
 ===================================================================================================================================*/
+/*
 @font-face {
     font-family: "BankGothic Lt BT";
     src: url('bank-gothic-light-bt.ttf')
 }
+*/
 
 html{
 /*    overflow: hidden;*/
@@ -35,7 +37,8 @@ html,body{
     height: 100%;
 }
 body{
-    font-family: "BankGothic Lt BT", serif;
+/*    font-family: "BankGothic Lt BT", serif;*/
+    font-family: "Roboto Condensed", sans-serif;
 /*    overflow: auto;*/
     overflow-x: hidden;
 }
@@ -213,7 +216,7 @@ keyframes animation
   
 }
 .centered-text a{
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     text-decoration: none;
     padding: 3px;
@@ -507,10 +510,12 @@ textarea.input-field {
 /*LARGE DEVICES*/
 @media (min-width: 1200px){
 /*    its alreday fine, if found any bug we would add something here*/
+    
 }
 
 /*MEDIUM DEVICES*/
 @media(min-width: 992px) and (max-width: 1199px){
+    
     
 }
 
@@ -534,5 +539,21 @@ textarea.input-field {
     .btn-cv{
         font-size: 24px;
         padding: 8px;
+    }
+    
+    .home-btn img{
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        margin-left: -160px;
+        
+    }
+    
+    .centered-text a{
+/*        position: absolute;*/
+          top: 68%;
+          left: -100%;
+  transform: translate(-100%, -20%);
+        font-size: 18px;
     }
 }
