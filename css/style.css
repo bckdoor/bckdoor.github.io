@@ -133,9 +133,9 @@ section{
     
 }
 .centered-text a:hover{
-    color: #fff;
+    color: #222;
     cursor: pointer;
-    background: #222;
+    background: #fff;
     border: solid 1px #fff;
 }
 

@@ -18,7 +18,6 @@ $(function(){
     
     
     
-    
     $(document).ready(function() {
   var fixHeight = function() {
     $('.navbar-nav').css(
