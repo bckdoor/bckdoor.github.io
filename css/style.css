@@ -395,100 +395,6 @@ textarea.input-field {
 
 
 
-/*===================================================================================================================================                                    FOOTER SECTION CSS                                                                                   
-===================================================================================================================================*/
-
-.footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	background-color: #eee;
-}
-.footer-title {
-	display: inline-block;
-	margin-bottom: 6px;
-    font-size: 22px;
-    font-weight: 700;
-    color: #111;
-}
-.footer-social {
-    padding: 10px 0;
-}
-.footer-social-list li {
-    display: inline-block;
-}
-.footer-social-list li a {
-    font-size: 20px;
-    color: #434343;
-    margin: 0 9px;
-}
-.footer-social-list li a:hover {
-	color: #C45911;
-}
-.footer .copy-text {
-    margin: 8px 0;
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.scroll-up {
-    position: fixed;
-	font-size: 28px;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    line-height: 38px;
-    color: #fafafa;
-    border: 2px solid #333;
-    background-color: #333;
-    bottom: 25px;
-    right: 30px;
-    opacity: 0;
-    z-index: 60;
-}
-.scroll-up:focus {
-	color: #fff;
-}
-.scroll-up:hover {
-	background-color: transparent;
-	color: #333;
-}
-.show-up-btn {
-	opacity: 1;
-}
-
-
-
-
-
-.btn-black{
-    color: #222;
-    border-color: #222;
-}
-.btn-black:hover,
-.btn-black:focus{
-    background: #C45911;
-    color: #FFF;
-    border-color: #C45911;
-}
-
-.btn-back-to-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 22px;
-    padding: 10px 15px;
-    border-radius: 0;
-    display: none;
-}
-
-
-
-
-
-
-
-
 
 
 .effect {
@@ -496,6 +402,46 @@ textarea.input-field {
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
 
 
 
